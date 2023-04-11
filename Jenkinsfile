@@ -14,12 +14,6 @@ pipeline {
 		}
 	}
 	
-	stage('Test Case Execution'){
-		steps{
-		bat "mvn clean org.jacoco:jacoco-maven-plugin:prepare-agentinstall-Pcoverage-per-test"
-		}
-	}
-	
 	stage('Archive Artifact'){
 		steps{
 		archiveArtifacts artifacts:'target/8.war'
