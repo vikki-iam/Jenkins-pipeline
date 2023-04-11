@@ -1,5 +1,8 @@
 
-node('main'){
+pipeline {
+	agent any
+	
+	stages{
 	stage('Checkout Code'){
 		checkout scm
 	}
@@ -32,5 +35,6 @@ node('main'){
 			body: "Jenkins pipeline job for maven build job completed",
 			to: "sudheer.barakers@gmail.com"
 		)
+	}
 	}
 }
