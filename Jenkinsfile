@@ -17,7 +17,7 @@ node('master'){
 	}
 	
 	stage('deployment'){
-		deploy adaptors = [tomocat9(credentialsId:'TomcatCreds' path: '', url: 'http://34.207.125.36:8080/' )], contextPath:`counterwebapp`,war:'target/*.war'
+		deploy adaptors = [tomocat9(credentialsId:'TomcatCreds' path: '', url: 'http://34.207.125.36:8080/' )], contextPath:'counterwebapp',war:'target/*.war'
 		
 	}
 	
