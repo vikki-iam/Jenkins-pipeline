@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+    tools{
+        maven 'maven 3.8.6'
+    }
+    stages{
+        stage('Checkout Code'){
+            steps{
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SudheerBarakers/Devops_Sample_Maven']]])
+                bat 'mvn clean install'
+            }
+        }
+    stage('build Automation') {
+
+	parallel {
+		stage('Maven Build'){
+           		 steps{
+                bat 'mvn clean install'
+            }
+        }
+	stage('Maven Test Cases'){
+           		 steps{
+                bat 'mvn clean test'
+            }
+        }
+
+		}
+    }
+     
+    }
+}
