@@ -1,19 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <groupId>com.java.example</groupId>
     <artifactId>java-example</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <url>http://maven.apache.org</url>
-    
+
     <dependencies>
         <!-- Servlet API - Provided scope, as it will be provided by the container -->
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
 
@@ -24,11 +24,22 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- SLF4J Logging for Troubleshooting -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.32</version>
+        </dependency>
     </dependencies>
-    
+
     <build>
-        <finalName>java-example</finalName>
-        
+        <finalName>ROOT</finalName> <!-- Ensure it's ROOT for Tomcat default app -->
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
@@ -36,23 +47,22 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
                 <configuration>
-                    <source>1.8</source> <!-- Ensure Java version is set properly -->
-                    <target>1.8</target> <!-- Ensure target JVM version is set properly -->
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
-            
+
             <!-- Maven WAR Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
                 <configuration>
-                    <!-- Configure the context root if necessary -->
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                 </configuration>
             </plugin>
 
-            <!-- JaCoCo Plugin (for code coverage) -->
+            <!-- JaCoCo Plugin for Code Coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -73,25 +83,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- Remove Clover Plugin as it might conflict with JaCoCo -->
-            <!-- <plugin>
-                <groupId>com.atlassian.maven.plugins</groupId>
-                <artifactId>maven-clover2-plugin</artifactId>
-                <version>3.0.4</version>
-                <configuration>
-                    <generateXml>true</generateXml>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>instrument</goal>
-                            <goal>clover</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin> -->
         </plugins>
     </build>
 </project>
