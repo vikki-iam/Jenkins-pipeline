@@ -52,7 +52,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Jacoco Plugin (for code coverage) -->
+            <!-- JaCoCo Plugin (for code coverage) -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -73,9 +73,9 @@
                     </execution>
                 </executions>
             </plugin>
-            
-            <!-- Clover Plugin (for code coverage) -->
-            <plugin>
+
+            <!-- Remove Clover Plugin as it might conflict with JaCoCo -->
+            <!-- <plugin>
                 <groupId>com.atlassian.maven.plugins</groupId>
                 <artifactId>maven-clover2-plugin</artifactId>
                 <version>3.0.4</version>
@@ -91,7 +91,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 </project>
