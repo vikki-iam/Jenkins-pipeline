@@ -23,8 +23,8 @@ pipeline {
 	stage('deployment'){
 		steps{
 		//deploy adapters: [tomcat9(credentialsId: 'TomcatCreds' path: '', url: 'http://52.90.187.236:8080/')], contextPath: 'counterwebapp', war: 'target/*.war'
-		deploy adapters: [tomcat9(url: 'http://3.92.185.199:8080/', 
-                              credentialsId: 'TomcatCreds')], 
+		deploy adapters: [tomcat9(url: 'http://15.206.68.180:8080/', 
+                              credentialsId: 'tomcat-ssh')], 
                      war: 'target/*.war',
                      contextPath: 'app'
 		}
@@ -36,7 +36,7 @@ pipeline {
 		emailext(
 			subject: "Job Completed",
 			body: "Jenkins pipeline job for maven build job completed",
-			to: "sudheer.baraker@gmail.com"
+			to: "harshakrithvik@gmail.com"
 		)
 		}
 	}
