@@ -34,11 +34,11 @@
 </head>
 <body>
     <h1>God is GREAT</h1>
-    <h2>God is GREAT</h2>
-    <p>This is a colorful and simple page!</p>
+    <h2>But your trainer is better then that</h2>
+    <p>Make a deployment putt your image</p>
     <!-- Clickable image -->
     <a href="https://www.example.com" target="_blank">
-        <img src="https://wallpapercave.com/wp/wp6589691.jpg" alt="A relevant description of the image">
+        <img src="https://th.bing.com/th/id/OIP.P3r3t0__zom-tHM_Zrd_yAHaHZ?rs=1&pid=ImgDetMain" alt="A relevant description of the image">
     </a>
     <a href="#" class="button">Click Me</a>
 </body>
