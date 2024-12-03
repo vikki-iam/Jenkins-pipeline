@@ -34,7 +34,7 @@
 </head>
 <body>
     <h1>God is GREAT</h1>
-    <h2>But your trainer is better then that</h2>
+    <h2>But Barath is better then that</h2>
     <p>Make a deployment putt your image</p>
     <!-- Clickable image -->
     <a href="https://www.example.com" target="_blank">
