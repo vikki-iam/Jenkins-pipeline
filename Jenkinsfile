@@ -2,10 +2,10 @@ pipeline {
     agent {
         label 'job-1' // This specifies that the pipeline should run on the node labeled 'job-1'
     }
-    environment {
-        TOMCAT_SERVER_IP = "13.233.160.204" // Update with your Tomcat server's public IP
-        TOMCAT_WEBAPPS_DIR = "/var/lib/tomcat10/webapps" // Tomcat's webapps directory for deployment
-    }
+    // environment {
+    //     TOMCAT_SERVER_IP = "13.233.160.204" // Update with your Tomcat server's public IP
+    //     TOMCAT_WEBAPPS_DIR = "/var/lib/tomcat10/webapps" // Tomcat's webapps directory for deployment
+    // }
     tools {
         maven 'Maven 3.8.1' // Ensure Maven is configured in Jenkins
     }
