@@ -33,7 +33,7 @@
     </style>
 </head>
 <body>
-    <h1>God is GREAT</h1>
+    <h1>MY FIRST SAMPLE APPLICATION</h1>
     <h2>Something is Better then Nothing</h2>
     <p>Make a deployment putt your image</p>
     <!-- Clickable image -->
