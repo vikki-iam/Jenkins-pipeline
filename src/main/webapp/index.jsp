@@ -34,11 +34,11 @@
 </head>
 <body>
     <h1>God is GREAT</h1>
-    <h2>But your trainer is better then that</h2>
+    <h2>Something is Better then Nothing</h2>
     <p>Make a deployment putt your image</p>
     <!-- Clickable image -->
     <a href="https://www.example.com" target="_blank">
-        <img src="https://th.bing.com/th/id/OIP.P3r3t0__zom-tHM_Zrd_yAHaHZ?rs=1&pid=ImgDetMain" alt="A relevant description of the image">
+        <img src="https://www.google.com/imgres?q=knowing%20is%20not%20enough&imgurl=https%3A%2F%2Fimages.gr-assets.com%2Fquotes%2F1485615280p8%2F9884.jpg&imgrefurl=https%3A%2F%2Fwww.goodreads.com%2Fquotes%2F9884-knowing-is-not-enough-we-must-apply-willing-is-not&docid=w98lskZeWhn7KM&tbnid=z4rm3T5I7fH77M&vet=12ahUKEwi5h9i-pYGLAxVBSWwGHfYGNQsQM3oECF0QAA..i&w=700&h=467&hcb=2&ved=2ahUKEwi5h9i-pYGLAxVBSWwGHfYGNQsQM3oECF0QAA">
     </a>
     <a href="#" class="button">Click Me</a>
 </body>
