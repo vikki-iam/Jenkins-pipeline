@@ -33,8 +33,8 @@
     </style>
 </head>
 <body>
-    <h1>MY FIRST SAMPLE APPLICATION</h1>
-    <h2>Something is Better then Nothing</h2>
+    <h1>DEMO PIPELINE</h1>
+    <h2>NAYANTHARA</h2>
     <p>Make a deployment putt your image</p>
     <!-- Clickable image -->
     <a href="https://www.example.com" target="_blank">
