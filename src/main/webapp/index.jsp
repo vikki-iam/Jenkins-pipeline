@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Web Application</title>
+    <title>Welcome to Demo PIpeline</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,7 +34,7 @@
 </head>
 <body>
     <h1>DEMO PIPELINE</h1>
-    <h2>NAYANTHARA</h2>
+    <h2>Hi Helowwwww</h2>
     <p>Make a deployment putt your image</p>
     <!-- Clickable image -->
     <a href="https://www.example.com" target="_blank">
