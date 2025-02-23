@@ -13,8 +13,8 @@ sudo apt install tomcat10 tomcat10-admin -y
 
 
 Start Tomcat service:
-sudo systemctl start tomcat
-sudo systemctl status tomcat
+sudo systemctl start tomcat10
+sudo systemctl status tomcat10
 
 
 Verify Java Installation (make sure Java is installed):
