@@ -7,7 +7,7 @@ pipeline {
     //     TOMCAT_WEBAPPS_DIR = "/var/lib/tomcat10/webapps" // Tomcat's webapps directory for deployment
     // }
     tools {
-        maven 'Maven 3.8.1' // Ensure Maven is configured in Jenkins
+        maven 'Maven' // Ensure Maven is configured in Jenkins
     }
     stages {
         stage('Checkout Code') {
