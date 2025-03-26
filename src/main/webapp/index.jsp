@@ -33,7 +33,7 @@
     </style>
 </head>
 <body>
-    <h1>THIS IS DEMO PROJECT</h1>
+    <h1>AWS & DEVOPS DEMO PIPELINE</h1>
     <h2>Hi Helowwwww</h2>
     <p>Make a deployment putt your image</p>
     <!-- Clickable image -->
